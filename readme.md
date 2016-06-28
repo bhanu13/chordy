@@ -30,4 +30,5 @@ We made some assumptions to simplify the implementation. The node identifiers an
 ##Result:
 The code mimicked a chord system and was used to analyze the chord architecture. A python file (sim.py) showing the simulation code is also included in the folder.
 
-### Contributors: Bhanu Agarwal (bhanu13), Ankur Gupta (agupta67)
+### Contributors:
+Bhanu Agarwal (bhanu13), Ankur Gupta (agupta67)
