@@ -6,13 +6,14 @@ CFLAGS = -Wall -c $(DEBUG)
 LFLAGS = -Wall $(DEBUG)
 
 chord: $(OBJS)
-	$(CC) $(LFLAGS) -lpthread $(OBJS) -o chord
+	$(CC) $(LFLAGS) $(OBJS) -o chord -lpthread 
 
 main.o: main.cpp chord.h
-	$(CC) $(CFLAGS) -lpthread main.cpp
+	$(CC) $(CFLAGS) main.cpp -lpthread  
 
 chord.o: chord.cpp chord.h
-	$(CC) $(CFLAGS) -lpthread chord.cpp
+	$(CC) $(CFLAGS) chord.cpp -lpthread
 
 clean:
 	\rm *.o *~ chord
+
